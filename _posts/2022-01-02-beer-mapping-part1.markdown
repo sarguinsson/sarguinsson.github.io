@@ -1,7 +1,7 @@
 ---
 title: "Beer mapping with python (Part 1)"
 date: 2022-01-02 16:08:41 +0100
-categories: gis
+categories: GIS
 tags:
   - Cartography
   - Maps

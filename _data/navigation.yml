@@ -1,7 +1,11 @@
 # main links
 main:
-  - title: "Posts"
-    url: /year-archive/
+  - title: "Archive"
+    url: /archive/
+  # - title: "Posts"
+  #   url: /year-archive/
+  - title: "Tags"
+    url: /tags/
   - title: "Coaching"
     url: /coaching/
   - title: "CV"
