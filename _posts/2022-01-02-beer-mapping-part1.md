@@ -19,7 +19,7 @@ Before start to draw maps, I will explain the used datasets. The URLs to reposit
 
 Activities file (.csv) --> link to download file
 
-<img src='{{ site.url }}/images/posts/activities_df.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/activities_df_00.png'>
 
 ## Display bar locations with points
 
@@ -85,7 +85,7 @@ def coordinates_to_point_activities(act_df):
 
 So, here we have the output bars_df_with_geometry containing geometry column with all Point objects.
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_04.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_04.png'>
 
 Then to make the exercise more real we are creating random prices between a range and inseting them into the bars_df.
 
@@ -139,11 +139,11 @@ def add_points_to_map(map, bars_df):
     folium.LayerControl(collapsed=False).add_to(map)
 ```
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_00.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_00.png'>
 
 In this second picture the tooltip with bar info is shown
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_02.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_02.png'>
 
 ## Display bar locations colored by beer price
 
@@ -207,7 +207,7 @@ def add_colored_points_to_map(map, bars_df):
     folium.LayerControl(collapsed=False).add_to(map)
 ```
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_03.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_03.png'>
 
 ## Display bar locations with clusters
 
@@ -264,16 +264,14 @@ def add_clusters_to_map(map, bars_df):
     folium.LayerControl(collapsed=False).add_to(map)
 ```
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_05.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_05.png'>
 
-<img src='{{ site.url }}/images/posts/add_points_to_map_06.png'>
+<img src='{{ site.url }}/images/posts/beer_mapping_part_1/add_points_to_map_06.png'>
 
 ## References
 
 - Zheng, J. (2019, November 08). jingwen-z.github.io. Retrieved from jingwen-z.github.io: [How to draw a variety of maps with folium in python?][how-to-draw-a-variety-of-maps-with-folium-in-python?]
 - Girona.cat. 2022. Establiments dedicats a activitats econòmiques - Activitats2020.csv - Girona Open Data. [online] Available at: [Girona Open Data - activities][ajuntament-de-girona-open-data-activities]
-- Girona.cat. 2022. Barris - Barris.zip - Girona Open Data. [online] Available at: [Girona Open Data - neighbourhoods][ajuntament-de-girona-open-data-neighbouhoods]
 
 [how-to-draw-a-variety-of-maps-with-folium-in-python?]: https://jingwen-z.github.io/how-to-draw-a-variety-of-maps-with-folium-in-python/
 [ajuntament-de-girona-open-data-activities]: https://terra.girona.cat/opendata/storage/f/2021-02-01T09%3A55%3A29.147Z/activitats2020.csv
-[ajuntament-de-girona-open-data-neighbouhoods]: https://www.girona.cat/opendata/dataset/barris/resource/eaae36f4-4013-4718-ab4a-7daecdb6ddad
